@@ -1,23 +1,32 @@
+# 工作流名称:自动锁定闲置的 Issue / PR / 讨论
 name: 'Lock Threads'
 
 on:
   schedule:
+    # 每小时整点触发一次(cron 表达式:分 时 日 月 周)
     - cron: '0 * * * *'
+  # 允许在 Actions 页面手动触发
   workflow_dispatch:
 
+# 该工作流所需的最小权限:可写 Issue、PR 和讨论区
 permissions:
   issues: write
   pull-requests: write
   discussions: write
 
+# 并发控制:同一时间只允许一个 lock-threads 任务实例运行
 concurrency:
   group: lock-threads
 
 jobs:
   action:
+    # 运行在最新的 Ubuntu 环境上
     runs-on: ubuntu-latest
     steps:
+      # 使用 dessant/lock-threads 动作锁定长期无活动的会话
       - uses: dessant/lock-threads@v6.0.2
         with:
+          # Issue 超过 7 天无活动即锁定
           issue-inactive-days: '7'
+          # Pull Request 超过 7 天无活动即锁定
           pr-inactive-days: '7'

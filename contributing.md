@@ -1,27 +1,29 @@
-# Contribution Guidelines
+> 🌐 本文档由 [Hack-with-Github/Awesome-Hacking](https://github.com/Hack-with-Github/Awesome-Hacking) 翻译,英文原版见原项目。
 
-Please follow the instructions below to make a contribution.
+# 贡献指南
 
-This resource was made by the developers and hackers alike! We appreciate and recognize all [contributors](#contributors).
+请按照以下说明进行贡献。
 
-## Table of Content
+这份资源由开发者和黑客们共同打造!我们感谢并铭记每一位[贡献者](#贡献者)。
 
-- [Adding to the list](#adding-to-the-list)
-- [To remove from the list](#to-remove-from-the-list)
-- [Contributors](#contributors)
+## 目录
 
-## Adding to the List
+- [添加到列表](#添加到列表)
+- [从列表中移除](#从列表中移除)
+- [贡献者](#贡献者)
 
-- Please add the content to the `README.md` file and make sure that the edited list is in alphabetical order.
-- Submit a pull request.
+## 添加到列表
 
-## Removing from the List
+- 请将内容添加到 `README.md` 文件中,并确保编辑后的列表按字母顺序排列。
+- 提交 Pull Request。
 
-- If you have any issues accessing any of the resources listed here, please let us know.
+## 从列表中移除
 
-## Contributors
+- 如果你在访问本页列出的任何资源时遇到问题,请告诉我们。
 
-Thanks to these amazing people who contributed to this project ❤️
+## 贡献者
+
+感谢这些为项目做出贡献的出色伙伴 ❤️
 
 <a href="https://github.com/hack-with-github/awesome-hacking/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=hack-with-github/awesome-hacking" />
